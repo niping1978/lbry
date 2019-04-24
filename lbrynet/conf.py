@@ -478,8 +478,8 @@ class Config(CLIConfig):
     )
 
     # protocol timeouts
-    download_timeout = Float("Cumulative timeout for a stream to begin downloading before giving up", 30.0)
-    blob_download_timeout = Float("Timeout to download a blob from a peer", 30.0)
+    download_timeout = Float("Cumulative timeout for a stream to begin downloading before giving up", 90.0)
+    blob_download_timeout = Float("Timeout to download a blob from a peer", 60.0)
     peer_connect_timeout = Float("Timeout to establish a TCP connection to a peer", 2.0)
     node_rpc_timeout = Float("Timeout when making a DHT request", constants.rpc_timeout)
 
